@@ -5,25 +5,26 @@
 }
 
 body{
-    background:plum;
+    background: whitesmoke;
 }
 
 nav{
     list-style: none;
     align-items: center;
-    background: grey;
+    background: black;
     min-height: 60px;
     display: flex;
     justify-content: space-around;
 }
 
 .logo{
-    color: black;
+    color: white;
     font-family: 'Rowdies', cursive;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 30px;
     width: 30%;
+    margin: 30px;
 }
 
 .nav-links{
@@ -44,7 +45,7 @@ nav{
 
 .nav-links a{
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 22px;
@@ -65,10 +66,10 @@ nav{
     width: 25px;
     height: 5px;
     margin: 5px 5px 5px 10px;
-    background-color: black;
+    background-color: white;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (min-width:698px){
     .nav-links{
         display: flex;
         justify-content: space-around;
@@ -90,7 +91,7 @@ nav{
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background: gray;
+        background: black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -134,7 +135,7 @@ nav{
 }
 
 .toggle .line1{
-    transform: rotateZ(-45deg) translate(-6px,6px);
+    transform: rotateZ(-45deg) translate(-6px,6px) translateY(2px);
 }
 
 .toggle .line2{
@@ -142,5 +143,5 @@ nav{
 }
 
 .toggle .line3{
-    transform: rotateZ(45deg) translate(-6px,-6px);
+    transform: rotateZ(45deg) translate(-6px,-6px) translateY(-2px);
 }
