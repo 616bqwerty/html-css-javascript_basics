@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <h1>Just add Magic!</h1>
+
+        <div class="content">
+
+            <form id="add-recipe-form">
+                <input type="text" name="name" placeholder="Recipe Name">
+                <input type="text" name="spice" placeholder="Magical Spice">
+                <button>Add recipe</button>
+            </form>
+
+            <ul id="recipe-list"></ul>
+
+        </div>
+
+        <script>
+        // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "YourApiKey",
+                authDomain: "YourAuthDomain",
+                databaseURL: "YourDataBaseUrl",
+                projectId: "YourProjectId",
+                storageBucket: "YourStprageBucket.com",
+                messagingSenderId: "YoueMessSenderId",
+                appId: "YourApiId",
+                measurementId: "YourMeasurementID"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+            const db=firebase.firestore();
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
