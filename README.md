@@ -1,2 +1,2 @@
-# html/css/javascript_basics
+# Web development basic
  Basic elements of a webpage
